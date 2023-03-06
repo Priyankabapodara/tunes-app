@@ -1,0 +1,251 @@
+.MainContainer{
+    width: 72%;
+    height: 100%;
+}
+.MainContainer .qContainer{
+    position: absolute;
+    display: inline-block;
+    margin: 100px 0px;
+    overflow: hidden;
+    width: 72%;
+    height: 100%;
+    align-items: center;
+    overflow-y: scroll;
+}
+.MainContainer .qContainer h3{
+    display: block;
+    position: relative;
+    color: #dedede;
+    text-align: center;
+    width: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #232323; 
+    
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #4b4b4b; 
+    
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3c3c3c; 
+
+  }
+
+.firstContainer{
+    margin: 0px 45px;
+}
+
+.secondContainer{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.thirdContainer{
+    height: 220px;
+    display: inline;
+}
+
+.ImageHolder{
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.838);
+    cursor: pointer;
+}
+
+.ImageHolder img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.InfoHolder .songName {
+    text-align: center;
+    color: #cfcfcf;
+    font-size: 13px;
+    overflow: hidden;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.InfoHolder .artistName{
+    text-align: center;
+    color: #848484;
+    font-size: 11px;
+    padding-top: 5px;
+}
+
+.fContainer{
+    width: 72%;
+    height: 200px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.artistimg{
+    width: 100%;
+    overflow: hidden;
+    
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.artistimg img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.911);
+    cursor: pointer;
+}
+
+.albumContainer{
+    width: 72%;
+    height: 680px;
+    display: flex;
+    justify-content: center;
+}
+
+.firstAlbums{
+    width: 100%;
+}
+.albholder{
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 18%;
+}
+
+.albimg{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20%;
+}
+
+.albimg img{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 30px;
+    cursor: pointer;
+}
+
+.albinfo{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 15px;
+    color: #cfcfcf;
+    padding-bottom: 50px;
+}
+
+.secondAlbums{
+    width: 100%;
+}
+
+.footer{
+    margin-left: 0%;
+    height: 300px;
+    background-color: #191919;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.footerContainer{
+    margin: 30px 30px;
+    display: flex;
+    overflow: hidden;
+}
+
+.copyright-section .log{
+    display: flex;
+    align-items: center;
+}
+
+.copyright-section img{
+    height: 30px;
+    width: 30px;
+}
+
+.copyright-section h4{
+    color: #a7a7a7;
+    text-align: center;
+    display: flex;
+    padding-left: 7px;
+}
+
+.copyright-section p{
+    color: #848484;
+    text-align:left;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.horizontal{
+    border-left: 2px solid #848484;
+    height: 105px;
+    position: relative;
+    border-radius: 10%;
+    margin:0% 6%;
+}
+
+.about h6{
+    color: #cfcfcf;
+    padding-bottom: 5px;
+}
+
+.about p{
+    color: #848484;
+    font-size: 11px;
+    padding-bottom: 5px;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.contact p{
+    padding: 0px 10px 0px 5px;
+    cursor: pointer;
+}
+
+.contact i{
+    font-size: 13px;
+    color: #cfcfcf;
+    cursor: pointer;
+}
+
+.social{
+    display: inline;
+    justify-content: space-between;
+}
+
+.social i{
+    font-size: 17px;
+    padding-bottom: 30px;
+    color: rgb(255, 251, 245);
+    cursor: pointer;
+}

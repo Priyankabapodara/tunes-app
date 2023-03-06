@@ -1,0 +1,496 @@
+.rightPanel{
+    top: 0%;
+    width: 28%;
+    height: 100%;
+    min-height: 100vh;
+    background: rgb(41, 41, 41);
+    backdrop-filter: blur(10px);
+    padding: 25px 25px;
+    float: right;
+    position: absolute;
+    overflow: hidden;
+    right: 0px;
+    transition: all 0.3s ease;
+}
+.rightPanel .rContainer{
+    margin: 10px 20px;
+}
+.rightPanel .rContainer .top{
+    align-items: center;
+    padding-bottom: 20px;
+}
+.rightPanel .rContainer .top h4{
+    text-align: center;
+    color: #f1f1f1;
+    width: 100%;
+    padding-bottom: 5px;
+}
+.rightPanel .rContainer .top hr{
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rightPanel .rContainer .middle-top{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.songImage{
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    margin-right: auto;
+}
+
+.songImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.loved{
+    margin-right: auto;
+}
+.loved i{
+    color: #ff0655;
+    filter: drop-shadow(0px 0px 20px #ff0655);
+    cursor: pointer;
+}
+
+.middle-bottom .songInfo{
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+    margin-left: 3%;
+}
+
+.songInfo .songname {
+    color: #f1f1f1;
+    font-size: 14px;
+}
+
+.songInfo .songartist{
+    padding-top: 5px;
+    color: #848484;
+    font-size: 12px;
+}
+
+.bottom, .bottom-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin: 20px 0px;
+    margin-left: 3%;
+}
+
+.bottom i{
+    color: #4d4d4d;
+    margin: 0px 10px;
+    cursor: pointer;
+    padding: 0px 10px;
+}
+
+.back i:nth-child(2), .forward i:nth-child(1){
+    color: #989898;
+}
+
+.playpause{
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    border-radius: 100%;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.playpause i{
+    color: #000;
+}
+
+.bottom-top .duration, .currentTime {
+    font-size: 13px;
+    padding: 0px 15px;
+    color: #f1f1f1;
+}
+
+.progressBar{
+    --bar-bg: #ffe3d4;
+    --seek-before-width: 0;
+    --seek-before-color: #ffc2a1;
+    --knobby: #3452a5;
+    --selectedKnobby: #26c9c3;
+  
+    appearance: none;
+    background: var(--bar-bg);;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 7px;
+    outline: none;
+}
+
+.progressBar::before{
+    content: '';
+    height: 11px;
+    width: var(--seek-before-width);
+    background-color: var(--seek-before-color);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.progressBar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--knobby);
+    cursor: pointer;
+    position: relative;
+    margin: -2px 0 0 0;
+    z-index: 3;
+    box-sizing: border-box;
+}
+
+.progressBar:active::-webkit-slider-thumb {
+    transform: scale(1.2);
+    background: var(--selectedKnobby);
+  }
+  
+.rhap_container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    font-family: inherit;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: rgb(41, 41, 41) !important;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+    background: transparent;
+    outline: none;
+  }
+
+  .rhap_container:focus:not(:focus-visible) {
+    outline: 0;
+  }
+
+  .rhap_progress-section{
+    color: #2e2e2e;
+
+  }
+  #rhap_current-time{
+    color: #848484;
+  }
+    
+  .rhap_total-time{
+    color: #848484;
+  }
+  
+#total_time{
+    color: #848484;
+}
+
+.rhap_time{
+    color: #848484;
+}
+
+.rhap_container:focus:not(:focus-visible) {
+    outline: 0;
+  }
+  .rhap_container svg {
+    vertical-align: initial;
+  }
+  
+  .rhap_header {
+    margin-bottom: 10px;
+  }
+  
+  .rhap_footer {
+    margin-top: 5px;
+  }
+  
+  .rhap_main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+  }
+  
+  .rhap_stacked .rhap_controls-section {
+    margin-top: 8px;
+  }
+  
+  .rhap_horizontal {
+    flex-direction: row;
+  }
+  .rhap_horizontal .rhap_controls-section {
+    margin-left: 8px;
+  }
+  
+  .rhap_horizontal-reverse {
+    flex-direction: row-reverse;
+  }
+  .rhap_horizontal-reverse .rhap_controls-section {
+    margin-right: 8px;
+  }
+  
+  .rhap_stacked-reverse {
+    flex-direction: column-reverse;
+  }
+  .rhap_stacked-reverse .rhap_controls-section {
+    margin-bottom: 8px;
+  }
+  
+  .rhap_progress-section {
+    display: flex;
+    flex: 3 1 auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .rhap_progress-container {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    flex: 1 0 auto;
+    align-self: center;
+    margin: 0 calc(10px + 1%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .rhap_progress-container:focus:not(:focus-visible) {
+    outline: 0;
+  }
+
+  
+  .rhap_time {
+    color: #868686;
+    font-size: 16px;
+    padding-right: 5px;
+  }
+  
+  #total_time{
+    color: #868686;
+  }
+  
+  .rhap_progress-bar {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 2px;
+  }
+
+  .rhap_progress-filled {
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background-color: #515151;
+    border-radius: 2px;
+  }
+  
+  .rhap_progress-bar-show-download {
+    background-color: rgba(221, 221, 221, 0.5);
+  }
+  
+  .rhap_download-progress {
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(189, 189, 189);
+    border-radius: 2px;
+  }
+
+  .rhap_progress-indicator {
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 3;
+    width: 14px;
+    height: 14px;
+    margin-left: -10px;
+    top: -4px;
+    background: #868686;
+    border-radius: 50px;
+    box-shadow: rgba(134, 134, 134, 0.5) 0 0 5px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .rhap_controls-section {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rhap_additional-controls {
+    display: flex;
+    flex: auto;
+    align-items: center;
+  }
+
+  .rhap_repeat-button {
+    font-size: 26px;
+    width: 26px;
+    height: 26px;
+    color: #868686;
+    margin-right: 6px;
+  }
+  
+  .rhap_main-controls {
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .rhap_main-controls button {
+    margin: 0 3px;
+    color: #d4d4d4;
+    font-size: 35px;
+    width: 35px;
+    height: 35px;
+  }
+  
+  .rhap_play-pause-button {
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    padding-right:5px;
+  }
+  
+  .rhap_volume-controls {
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .rhap_volume-button {
+    flex: 0 0 26px;
+    font-size: 26px;
+    width: 26px;
+    height: 26px;
+    color: #868686;
+    margin-right: 6px;
+  }
+  
+  .rhap_volume-container {
+    display: flex;
+    align-items: center;
+    flex: 0 1 100px;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  .rhap_volume-bar-area {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 14px;
+    cursor: pointer;
+  }
+  .rhap_volume-bar-area:focus:not(:focus-visible) {
+    outline: 0;
+  }
+  
+  .rhap_volume-bar {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background: rgb(143, 143, 143);
+    border-radius: 2px;
+  }
+  
+  .rhap_volume-indicator {
+    box-sizing: border-box;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    margin-left: -6px;
+    left: 0;
+    top: -4px;
+    background: #626262;
+    opacity: 0.9;
+    border-radius: 50px;
+    box-shadow: rgba(134, 134, 134, 0.5) 0 0 3px;
+    cursor: pointer;
+  }
+  .rhap_volume-indicator:hover {
+    opacity: 0.9;
+  }
+  
+  .rhap_volume-filled {
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background-color: #868686;
+    border-radius: 2px;
+  }
+  
+  /* Utils */
+  .rhap_button-clear {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .rhap_button-clear:hover {
+    opacity: 0.9;
+    transition-duration: 0.2s;
+  }
+  .rhap_button-clear:active {
+    opacity: 0.95;
+  }
+  .rhap_button-clear:focus:not(:focus-visible) {
+    outline: 0;
+  }
+
+ @media screen and (min-width: 370px) {
+            .audio_info {
+                display: initial;
+                animation: marquee5 10s cubic-bezier(0, 0.23, 0.6, -0.09) infinite;
+            }
+        }
+
+        @media screen and (min-width: 450px) {
+            .audio_info {
+                animation: marquee4 10s cubic-bezier(0, 0.23, 0.7, -0.09) infinite;
+            }
+        }
+
+        @media screen and (min-width: 550px) {
+            .audio_info {
+                animation: marquee3 10s cubic-bezier(0, 0.23, 0.85, -0.09) infinite;
+            }
+        }
+
+        @media screen and (min-width: 650px) {
+            .audio_info {
+                animation: marquee2 10s cubic-bezier(0, 0.23, 1, -0.09) infinite;
+            }
+        }
+
+        @media screen and (min-width: 720px) {
+            .audio_info {
+                animation: initial;
+            }
+        }

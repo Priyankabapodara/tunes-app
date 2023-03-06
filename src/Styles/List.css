@@ -1,0 +1,32 @@
+.list{
+  width: 650px;
+  height: 80%;
+  background-color: rgb(24, 24, 24);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  overflow-y: auto;
+  position: fixed;
+  top: 9%;
+  justify-content: center;
+  left: 14%;
+  border-radius: 2%;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    color: #f1f1f1;
+    padding: 8px 12px;
+  }
+  
+  li:hover {
+    background-color: rgba(0, 0, 0, 0.14);
+    cursor: pointer;
+  }
+
+a{
+  text-decoration: none;
+  color: #f1f1f1;
+}
